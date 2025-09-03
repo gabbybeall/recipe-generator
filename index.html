@@ -3,38 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Recipe Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter an ingredient"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>The recipe will go here</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/gabbybeall" target="_blank">Gabby Beall</a>,
-      is
-      <a href="https://github.com/gabbybeall/recipe-generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://recipe-generator-gb.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter an ingredient"
+            autofocus
+            required
+            autocomplete="off"
+            class="ingredients"
+          />
+          <input type="submit" class="get-recipe-button" value="Get Recipe" />
+        </form>
+        <div class="recipe">The recipe will go here</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/gabbybeall" target="_blank">Gabby Beall</a>,
+        is
+        <a href="https://github.com/gabbybeall/recipe-generator" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://recipe-generator-gb.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
